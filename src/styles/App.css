@@ -1,0 +1,19 @@
+body{
+    background: silver;
+}
+
+header::after{
+      position: absolute;
+      content: "";
+      height: 2px;
+      background-color: #242424;
+      width: 100%;
+      top: 80px;
+}
+.Posts{
+  display: flex;
+}
+.Posts img {
+  width: 200px;
+  min-height: 200px;
+}

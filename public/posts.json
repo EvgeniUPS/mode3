@@ -1,0 +1,44 @@
+{
+  "posts":[
+    {
+      "id":1,
+      "title":"School1",
+      "img":"/img/school1.jpg",
+      "post":"post1",
+      "category":"test1",
+      "comments":[]
+    },
+    {
+      "id": 2,
+      "title": "School2",
+      "img": "/img/school2.jpg",
+      "post": "post2",
+      "category": "test2",
+      "comments": []
+    }  ,
+    {
+      "id": 3,
+      "title": "School3",
+      "img": "/img/school3.jpg",
+      "post": "post3",
+      "category": "test3",
+      "comments": []
+    },
+    {
+      "id": 4,
+      "title": "School4",
+      "img": "/img/school4.jpg",
+      "post": "post4",
+      "category": "test4",
+      "comments": []
+    },
+    {
+      "id": 5,
+      "title": "School5",
+      "img": "/img/school5.jpg",
+      "post": "post5",
+      "category": "test5",
+      "comments": []
+    }
+  ]
+}
