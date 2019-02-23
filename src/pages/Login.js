@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import TextFields from '../components/molecules/TextFields'
 
 class Login extends Component {
