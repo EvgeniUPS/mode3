@@ -27,7 +27,7 @@ class Home extends PureComponent {
           </div>
         }
         <div className="Posts">
-          <Posts posts={posts.posts} event={getInfoPost()} />
+          <Posts posts={posts.posts} />
         </div>
         <Footer />
       </>
