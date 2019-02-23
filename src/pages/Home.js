@@ -6,6 +6,7 @@ import { getMainPost } from '../store/actions/getMainPostAction'
 import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
 import '../styles/Home.css'
+import MainPost from '../components/MainPost'
 
 class Home extends PureComponent {
   componentDidMount() {
@@ -18,12 +19,13 @@ class Home extends PureComponent {
 
     return (
       <>
-        {
-          mainPost.post && <MainPost img={mainPost.post.img}
-          title={mainPost.post.title}
-          content={mainPost.post.post}
+        {mainPost.post && (
+          <MainPost
+            img={mainPost.post.img}
+            title={mainPost.post.title}
+            content={mainPost.post.post}
           />
-        }
+        )}
         <div className="Posts">
           <Posts posts={posts.posts} />
         </div>
@@ -33,7 +35,7 @@ class Home extends PureComponent {
 }
 const mapSate = ({ posts, mainPost }) => ({
   posts,
-  mainPost
+  mainPost,
 })
 export default connect(
   mapSate,
