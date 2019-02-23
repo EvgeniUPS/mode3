@@ -1,5 +1,6 @@
 body{
     background: silver;
+    font-family: Arial;
 }
 
 header::after{
@@ -17,6 +18,7 @@ header::after{
   margin: 0 auto;
 }
 .Posts img {
+  border-radius: 5px;
   width: 250px;
   min-height: 200px;
 }
