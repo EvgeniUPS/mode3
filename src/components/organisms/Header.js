@@ -11,9 +11,15 @@ export const Header = () => (
     </div>
     <div className="header-nav">
       <ul>
-        <li><Link to='/category'>Category</Link></li>
-        <li><Link to='/about'>About</Link></li>
-        <li><Link to='/login'>SignUp/Login</Link></li>
+        <li>
+          <Link to="/category">Category</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/login">SignUp/Login</Link>
+        </li>
       </ul>
     </div>
   </HeaderBlock>
