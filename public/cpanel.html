@@ -5,9 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Admin panel</title>
+  <style>
+  .admin-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 1100px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .header{
+    background-color: #ccc;
+    border: 1px solid #000;
+  }
+  .pics{
+    /* visibility: hidden; */
+
+  }
+  .main{
+    flex-grow: 1;
+    border: 1px solid #000;
+  }
+
+  .footer{
+    border: 1px solid #000;
+  }
+  </style>
 </head>
 <body>
-  
+  <div class="admin-wrapper">
+    <header class="header">
+      <div class="pics"><img src="./img/logo.jpg" alt=""></div>
+    </header>
+    <main class="main">
+      <form action="">
+        <div class="snippet">
+          <input type="text" id="edit-snippet">
+          <label for="edit-snippet">Snippet</label>
+        </div>
+      
+        <div class="content">
+          <input type="text" id="edit-content">
+          <label for="edit-content">Content</label>
+        </div>
+      </form>
+
+    </main>
+    <footer class="footer">
+      footer
+    </footer>
+  </div>
   
 </body>
 </html>
