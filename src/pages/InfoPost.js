@@ -10,8 +10,6 @@ class InfoPost extends Component {
 
     return (
       <div>
-        <Link to='/' children='Go Home'/>
-        <br/>
         {infoPost.post && <div className="single-post">
           <div>
             <img src={infoPost.post.img} alt="logo img" className="post-image" />
