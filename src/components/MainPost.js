@@ -10,6 +10,7 @@ const MainPost = ({ img, title, content }) => {
       <h4>{title}</h4>
       <p>{content}</p>
     </div>
+
     </div>
   )
 }
