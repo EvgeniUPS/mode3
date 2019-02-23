@@ -1,3 +1,14 @@
+.Posts{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
+}
+.Posts img {
+  border-radius: 5px;
+  width: 270px;
+  min-height: 200px;
+}
 .container-news {
   margin-top: 60px;
   width: 300px;
@@ -9,4 +20,8 @@
 .container-news p{
   width: 260px;
   margin-top: 0;
+}
+
+.main{
+  
 }

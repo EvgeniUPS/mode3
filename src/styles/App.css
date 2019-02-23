@@ -16,31 +16,3 @@ footer::before{
   border-top: 2px solid black;
   width: 100%;
 }
-
-.Posts{
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin: 0 auto;
-}
-.Posts img {
-  border-radius: 5px;
-  width: 270px;
-  min-height: 200px;
-}
-
-
-.MainPost{
-  width: 1200px;
-  display: flex;
-  justify-content: center;
-}
-.MainPost img{
-  width: 500px;
-  min-height: 400px;
-}
-.MainPost .container-news{
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-}
