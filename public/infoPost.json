@@ -5,6 +5,34 @@
     "img":"/img/school1.jpg",
     "post":"post1",
     "category": "category1",
-    "commit": []
+    "commit": [
+      {
+        "avatar": "img",
+        "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n  Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
+        "answer": [ {
+          "avatar": "img",
+          "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+        } ]
+      },
+      {
+        "avatar": "img",
+        "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
+        "answer": []
+      },
+      {
+        "avatar": "img",
+        "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
+        "answer": [
+          {
+            "avatar": "img",
+            "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+          },
+          {
+            "avatar": "img",
+            "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
+          }
+        ]
+      }
+    ]
   }
 }
