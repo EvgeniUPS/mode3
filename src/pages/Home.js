@@ -6,6 +6,7 @@ import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
 import '../styles/App.css'
 import '../styles/Posts.css'
+import MainPost from '../components/MainPost'
 
 class Home extends PureComponent {
   componentDidMount() {
@@ -20,9 +21,10 @@ class Home extends PureComponent {
     return (
       <>
         {
-          mainPost.post && <div className='MainPost'>
-            <Post title={mainPost.post.title} img={mainPost.post.img} content={mainPost.post.post} />
-          </div>
+          mainPost.post && <MainPost img={mainPost.post.img}
+          title={mainPost.post.title}
+          content={mainPost.post.post}
+          />
         }
         <div className="Posts">
           <Posts posts={posts.posts} />

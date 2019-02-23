@@ -1,8 +1,9 @@
 body{
     background: silver;
     font-family: Arial;
+    display: flex;
+    justify-content: center;
 }
-
 header::after{
       position: absolute;
       content: "";
@@ -11,6 +12,11 @@ header::after{
       width: 100%;
       top: 80px;
 }
+footer::before{
+  border-top: 2px solid black;
+  width: 100%;
+}
+
 .Posts{
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +25,22 @@ header::after{
 }
 .Posts img {
   border-radius: 5px;
-  width: 250px;
+  width: 270px;
   min-height: 200px;
+}
+
+
+.MainPost{
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+.MainPost img{
+  width: 500px;
+  min-height: 400px;
+}
+.MainPost .container-news{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
 }
