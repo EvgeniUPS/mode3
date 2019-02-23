@@ -8,6 +8,7 @@ class About extends Component {
         <Link to='/' children='Home' />
         <h2>About</h2>
       </div>
+
     )
   }
 }
