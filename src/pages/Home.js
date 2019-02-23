@@ -1,12 +1,12 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import Posts from '../components/Posts'
-import MainPost from '../components/MainPost'
 import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
 import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
 import '../styles/Home.css'
+
 
 class Home extends PureComponent {
   componentDidMount() {
@@ -19,12 +19,13 @@ class Home extends PureComponent {
 
     return (
       <>
-        {
-          mainPost.post && <MainPost img={mainPost.post.img}
-          title={mainPost.post.title}
-          content={mainPost.post.post}
+        {mainPost.post && (
+          <MainPost
+            img={mainPost.post.img}
+            title={mainPost.post.title}
+            content={mainPost.post.post}
           />
-        }
+        )}
         <div className="Posts">
           <Posts posts={posts.posts} />
         </div>
@@ -34,7 +35,7 @@ class Home extends PureComponent {
 }
 const mapSate = ({ posts, mainPost }) => ({
   posts,
-  mainPost
+  mainPost,
 })
 export default connect(
   mapSate,

@@ -1,6 +1,10 @@
-.About{
+main{
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .about-img {
   display: flex;
   justify-content: center;

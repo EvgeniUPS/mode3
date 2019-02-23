@@ -7,28 +7,40 @@
     "category": "category1",
     "commit": [
       {
-        "avatar": "img",
+        "id":0,
+        "userName":"User1",
+        "avatar": "./img/logo.jpg",
         "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n  Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
         "answer": [ {
-          "avatar": "img",
+          "id":1,
+          "userName": "User1",
+          "avatar": "./img/logo.jpg",
           "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
         } ]
       },
       {
-        "avatar": "img",
-        "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
+        "id": 2,
+          "userName": "User1",
+          "avatar": "./img/logo.jpg",
+          "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
         "answer": []
       },
       {
-        "avatar": "img",
-        "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
+        "id": 3,
+          "userName": "User1",
+          "avatar": "./img/logo.jpg",
+          "msg": "Voluptatibus debitis deserunt reiciendis asperiores consectetur\narchitecto possimus ipsa unde nobis laudantium!",
         "answer": [
           {
-            "avatar": "img",
+            "id": 4,
+            "userName": "User1",
+            "avatar": "./img/logo.jpg",
             "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
           },
           {
-            "avatar": "img",
+            "id": 5,
+            "userName": "User1",
+            "avatar": "./img/logo.jpg",
             "msg": "Lorem ipsum dolor, sit amet consectetur adipisicing elit"
           }
         ]

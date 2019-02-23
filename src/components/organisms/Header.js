@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import HeaderBlock from '../atom/Header'
 import { getCategory } from '../../store/actions/getCategoryAction'
 import '../../styles/Header.css'
+import Category from '../Category'
 
 class Header extends PureComponent {
   state = {

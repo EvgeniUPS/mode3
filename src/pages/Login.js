@@ -35,7 +35,6 @@ class Login extends Component {
     const { email, password } = this.state
     return (
       <div>
-        <Link to='/' children='Home' />
         <h2>Login</h2>
         <form>
           <TextFields type='email' value={email} name='Email' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
