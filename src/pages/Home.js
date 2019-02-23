@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
+import MainPost from '../components/MainPost'
 import Posts from '../components/Posts'
 import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
