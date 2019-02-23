@@ -12,6 +12,7 @@ class Posts extends Component {
         console.log(item, i)
         return (
           <Post
+            id={item.id}
             key={item.id}
             img={item.img}
             title={item.title}

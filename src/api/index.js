@@ -4,5 +4,10 @@ export default {
   },
   getMainPost() {
     return fetch('mainPost.json')
+  },
+  // id
+  // /post/${id}
+  getInfoPost() {
+    return fetch('infoPost.json')
   }
 }

@@ -4,6 +4,7 @@ import Posts from '../components/Posts'
 import Post from '../components/Post'
 import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
+import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
 import '../styles/Posts.css'
 import MainPost from '../components/MainPost'
@@ -39,5 +40,5 @@ const mapSate = ({ posts, mainPost }) => ({
 })
 export default connect(
   mapSate,
-  { getPosts, getMainPost }
+  { getPosts, getMainPost, getInfoPost }
 )(Home)
