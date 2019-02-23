@@ -4,8 +4,7 @@ import '../styles/Posts.css'
 
 class Posts extends Component {
   render() {
-    const { posts, event } = this.props
-    console.log(posts && posts[0])
+    const { posts } = this.props
 
     return (
       posts &&
@@ -13,7 +12,6 @@ class Posts extends Component {
         console.log(item, i)
         return (
           <Post
-            event={event}
             id={item.id}
             key={item.id}
             img={item.img}
