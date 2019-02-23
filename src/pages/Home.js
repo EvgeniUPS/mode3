@@ -7,7 +7,7 @@ import { getMainPost } from '../store/actions/getMainPostAction'
 import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
 import '../styles/Home.css'
-import MainPost from '../components/MainPost'
+
 
 class Home extends PureComponent {
   componentDidMount() {
