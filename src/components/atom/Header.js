@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export default styled.header`
-  width: 1200px;
+  width: 100%;
   margin-bottom: 40px;
   display: flex;
   min-height: 90px;

@@ -3,6 +3,7 @@ import '../styles/About.css'
 class About extends Component {
   render() {
     return (
+      <div className='About'>
       <main>
         <div className="about-img">
         <img src="/img/about-img.jpg" alt="about-img"/>

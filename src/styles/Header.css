@@ -55,9 +55,7 @@
   font-size: 22px;
   color: #8b572a;
 }
-.header-nav a:active{
 
-}
-.header-nav a:hover{
-  color: tomato;
+.Category {
+  flex-direction: column;
 }
