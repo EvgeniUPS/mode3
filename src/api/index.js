@@ -9,5 +9,8 @@ export default {
   // /post/${id}
   getInfoPost() {
     return fetch('infoPost.json')
-  }
+  },
+  getCategory() {
+    return fetch('category.json')
+  },
 }

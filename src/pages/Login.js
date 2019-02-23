@@ -37,9 +37,11 @@ class Login extends Component {
       <div>
         <Link to='/' children='Home' />
         <h2>Login</h2>
-        <TextFields type='email' value={email} name='Email' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
-        <TextFields type='password' value={password} name='Password' onChange={() => this.$onChange('password')} onKeyUp={this.$keyUp} />
-        <button onClick={this.$submit}>push</button>
+        <form>
+          <TextFields type='email' value={email} name='Email' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
+          <TextFields type='password' value={password} name='Password' onChange={() => this.$onChange('password')} onKeyUp={this.$keyUp} />
+          <button onClick={this.$submit}>push</button>
+        </form>
       </div>
     )
   }
