@@ -13,4 +13,10 @@ export default {
   getCategory() {
     return fetch('category.json')
   },
+  signIn(data) {
+    return fetch('signIn', {
+      method: 'POST',
+      body: data
+    })
+  },
 }
