@@ -1,13 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
+import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
+import { createBrowserHistory } from 'history'
 import store from './store'
 import theme from './theme'
+import RootRouter from './routes'
 import GlobalStyle from './theme/GlobalStyle'
 import * as serviceWorker from './services/serviceWorker'
-import RootRouter from './routes'
-import { BrowserRouter } from 'react-router-dom'
+
+export const history = createBrowserHistory()
 
 ReactDOM.render(
   <Provider store={store}>

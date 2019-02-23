@@ -5,6 +5,7 @@ import Post from '../components/Post'
 import { Footer } from '../components/organisms/Footer'
 import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
+import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
 
 class Home extends PureComponent {
@@ -26,7 +27,7 @@ class Home extends PureComponent {
           </div>
         }
         <div className="Posts">
-          <Posts posts={posts.posts} />
+          <Posts posts={posts.posts} event={getInfoPost()} />
         </div>
         <Footer />
       </>
@@ -39,5 +40,5 @@ const mapSate = ({ posts, mainPost }) => ({
 })
 export default connect(
   mapSate,
-  { getPosts, getMainPost }
+  { getPosts, getMainPost, getInfoPost }
 )(Home)

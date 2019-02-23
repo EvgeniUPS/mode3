@@ -5,6 +5,7 @@ const FAILURE = 'FAILURE'
 // const CATEGORY = 'CATEGORY_'
 const POSTS = 'POSTS '
 const MAIN_POST = 'MAIN_POST '
+const INFO_POST = 'INFO_POST'
 
 export const GetPosts = {
   start: POSTS + START,
@@ -15,4 +16,9 @@ export const GetMainPost = {
   start: MAIN_POST + START,
   success: MAIN_POST + SUCCESS,
   failure: MAIN_POST + FAILURE
+}
+export const GetInfoPost = {
+  start: INFO_POST + START,
+  success: INFO_POST + SUCCESS,
+  failure: INFO_POST + FAILURE
 }

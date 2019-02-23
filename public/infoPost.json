@@ -1,0 +1,10 @@
+{
+  "post": {
+    "id":1,
+    "title":"School1",
+    "img":"/img/school1.jpg",
+    "post":"post1",
+    "category": "category1",
+    "commit": []
+  }
+}
