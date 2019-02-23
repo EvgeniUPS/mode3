@@ -1,12 +1,11 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import Posts from '../components/Posts'
-import Post from '../components/Post'
+import MainPost from '../components/MainPost'
 import { getPosts } from '../store/actions/getPostsAction'
 import { getMainPost } from '../store/actions/getMainPostAction'
 import { getInfoPost } from '../store/actions/getInfoPostAction'
 import '../styles/App.css'
-import MainPost from '../components/MainPost'
 import '../styles/Home.css'
 
 class Home extends PureComponent {
@@ -17,7 +16,6 @@ class Home extends PureComponent {
 
   render() {
     const { posts, mainPost } = this.props
-
 
     return (
       <>
