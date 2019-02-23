@@ -1,14 +1,15 @@
 import React from 'react'
 import FooterBlock from '../atom/Footer'
+import { Link } from 'react-router-dom'
 import '../../styles/Footer.css'
 export const Footer = () => (
   <FooterBlock>
 
     <div className="footer-nav">
       <ul>
-        <li><a href="#">Social 1</a></li>
-        <li><a href="#">Social 2</a></li>
-        <li><a href="#">Social 3</a></li>
+        <li><Link to='/social1'>Social 1</Link></li>
+        <li><Link to='/social2'>Social 2</Link></li>
+        <li><Link to='/social3'>Social 3</Link></li>
       </ul>
     </div>
     <div className="footer-logo">

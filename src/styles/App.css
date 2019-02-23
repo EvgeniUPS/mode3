@@ -12,8 +12,11 @@ header::after{
 }
 .Posts{
   display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
 }
 .Posts img {
-  width: 200px;
+  width: 250px;
   min-height: 200px;
 }

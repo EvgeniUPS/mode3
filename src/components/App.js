@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
-import { Header } from './organisms/Header'
 import { getPosts } from '../store/actions/gerPostsAction'
 import '../styles/App.css'
 import Posts from './Posts'
