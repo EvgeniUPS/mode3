@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { getPosts } from '../store/actions/gerPostsAction'
 import '../styles/App.css'
-import Posts from './Posts'
-import { Footer } from './organisms/Footer'
+import Posts from '../components/Posts'
+import { Footer } from '../components/organisms/Footer'
 
-class App extends PureComponent {
+class Home extends PureComponent {
   componentDidMount() {
     this.props.getPosts()
   }
@@ -28,4 +28,4 @@ const mapSate = ({ posts }) => ({
 export default connect(
   mapSate,
   { getPosts }
-)(App)
+)(Home)
