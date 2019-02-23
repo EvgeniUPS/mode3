@@ -9,7 +9,7 @@ class App extends PureComponent {
   componentDidMount() {
     this.props.getPosts()
   }
-
+  //ololo
   render() {
     const { posts } = this.props
     return (
