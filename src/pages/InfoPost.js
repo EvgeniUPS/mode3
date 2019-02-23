@@ -13,19 +13,14 @@ class InfoPost extends Component {
 
     return (
       <div>
-        <Link to="/" children="Go Home" />
-        <br />
-        {infoPost.post && (
-          <div className="single-post">
-            <div>
-              <img
-                src={infoPost.post.img}
-                alt="logo img"
-                className="post-image"
-              />
-            </div>
-            <div className="post-title">{infoPost.post.title}</div>
-            <p className="post-text">{infoPost.post.post}</p>
+        {infoPost.post && <div className="single-post">
+          <div>
+            <img src={infoPost.post.img} alt="logo img" className="post-image" />
+          </div>
+          <div className="post-title">{infoPost.post.title}</div>
+          <p className="post-text">{infoPost.post.post}</p>
+
+          <div className="post-comments-title">Comments</div>
 
             <div className="post-comments-title">Comments</div>
             <div className="comment-container">
