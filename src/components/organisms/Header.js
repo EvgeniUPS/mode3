@@ -22,12 +22,12 @@ class Header extends PureComponent {
 
   render(){
     const { isOpen } = this.state
-    const { getCategory, category } = this.props
+    const { getCategory ,category } = this.props
 
     return (
       <HeaderBlock>
         <div className="header-logo">
-          <img src="/img/logo.jpg" alt="logo" />
+          <img src="/img/origin/1550974282-logo.jpg" alt="logo" />
           <Link to='/'>Lyceum's Odessa News</Link>
         </div>
         <div className="header-nav">

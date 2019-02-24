@@ -12,7 +12,6 @@ export const getCategory = () => async dispatch => {
     const apiCall = await API.getCategory()
     const dataApi = await apiCall.json()
 
-    console.log(dataApi)
 
     dispatch(getCategorySuccess(dataApi.category))
   } catch (err) {

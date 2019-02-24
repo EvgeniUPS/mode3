@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import '../styles/Selected.css'
 
@@ -14,7 +13,7 @@ class InfoPost extends Component {
           <div className="single-post">
             <div>
               <img
-                src={infoPost.post.img}
+              src={`/origin/${infoPost.post.img}`}
                 alt="logo img"
                 className="post-image"
               />
@@ -33,7 +32,7 @@ class InfoPost extends Component {
                         {' '}
                         <div className="comment-header">
                           <img
-                            src={item.avatar}
+                            src={`/origin/${item.avatar}`}
                             alt="logo img"
                             className="avatar"
                           />
@@ -49,7 +48,7 @@ class InfoPost extends Component {
                             <div className="answer-block" key={answer.id}>
                               <div className="comment-header">
                                 <img
-                                  src={answer.avatar}
+                                  src={`/origin/${answer.avatar}`}
                                   alt="logo img"
                                   className="avatar"
                                 />

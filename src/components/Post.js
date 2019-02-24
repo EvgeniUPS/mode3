@@ -12,7 +12,7 @@ class Post extends Component {
 
     return (
       <div className="container-news" onClick={() => this.goInfo(id, history)}>
-        <img src={img} alt="post-img" />
+        <img src={`/origin/${img}`} alt="post-img" />
         <h4>{title}</h4>
         <p>{content}</p>
       </div>

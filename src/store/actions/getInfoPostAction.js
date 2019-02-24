@@ -9,7 +9,7 @@ export const getInfoPost = (id, history) => async dispatch => {
   try {
     dispatch(getInfoPostStart())
 
-    const apiCall = await API.getInfoPost()
+    const apiCall = await API.getInfoPost(id)
     const dataApi = await apiCall.json()
 
     console.log(id)
