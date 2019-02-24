@@ -11,6 +11,16 @@ class Header extends PureComponent {
     isOpen: true
   }
 
+  mouseLeave = () => {
+    this.setState({isOpen: false})
+  }
+
+  categoryClick = () => {
+    console.log(33)
+    this.props.getCategory()
+    this.setState({isOpen: true})
+  }
+
   render(){
     const { isOpen } = this.state
     const { getCategory, category } = this.props
@@ -22,13 +32,12 @@ class Header extends PureComponent {
           <Link to='/'>Lyceum's Odessa News</Link>
         </div>
         <div className="header-nav">
-          <ul>
-            <li onClick={getCategory}>
-              Category
+          <ul className="header-main-nav">
+            <li onClick={this.categoryClick}>Category
               {
-                isOpen && category && <ul className='Category'>
+                isOpen && category && <ul className='Category' onMouseLeave={this.mouseLeave}>
                   {category.map(item => {
-                    return <li key={item.id}>{item.name}</li>
+                    return <li key={item.category_id}>{item.category_name}</li>
                   })}
                 </ul>
               }
