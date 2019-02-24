@@ -8,6 +8,7 @@ class Login extends Component {
     email: '',
     password: '',
     firstName: '',
+    secondName: '',   
     isAccount: false
   }
   $isAccountChange = () => this.setState({isAccount: !this.state.isAccount})
@@ -38,12 +39,13 @@ class Login extends Component {
         <h2>Login</h2>
         {
           isAccount ? <form>
-            <TextFields type='email' value={email} name='Email' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
+            <TextFields type='email' value={email} name='Login' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
             <TextFields type='password' value={password} name='Password' onChange={() => this.$onChange('password')} onKeyUp={this.$keyUp} />
             <button onClick={this.$submit}>push</button>
           </form> : <form>
-            <TextFields type='email' value={email} name='Email' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
+            <TextFields type='email' value={email} name='Login' onChange={() => this.$onChange('email')} onKeyUp={this.$keyUp} />
             <TextFields type='text' value={firstName} name='First Name' onChange={() => this.$onChange('firstName')} onKeyUp={this.$keyUp} />
+            <TextFields type='text' value={firstName} name='Second Name' onChange={() => this.$onChange('secondName')} onKeyUp={this.$keyUp} />
             <button onClick={this.$submit}>push</button>
           </form>
         }

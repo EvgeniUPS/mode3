@@ -6,7 +6,7 @@ export default {
     return fetch("http://176.114.4.107:8080/post/main")
   },
   getInfoPost(id) {
-    return fetch(`http://176.114.4.107:8080/post/?${id}`)
+    return fetch(`/post/${id}`)
   },
   getCategory() {
     return fetch("http://176.114.4.107:8080/category/all")
@@ -17,4 +17,7 @@ export default {
       body: data
     })
   },
+  selectCategory(name){
+    return fetch(`http://176.114.4.107:8080/post/${name}`);
+  }
 }
