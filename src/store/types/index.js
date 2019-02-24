@@ -7,6 +7,7 @@ const POSTS = 'POSTS '
 const CATEGORY = 'CATEGORY'
 const MAIN_POST = 'MAIN_POST '
 const INFO_POST = 'INFO_POST '
+const SELECTED_CATEGORY = 'SELECTED_CATEGORY '
 
 export const GetPosts = {
   start: POSTS + START,
@@ -27,4 +28,9 @@ export const GetCategory = {
   start: CATEGORY + START,
   success: CATEGORY + SUCCESS,
   failure: CATEGORY + FAILURE
+}
+export const GetSelectedCategory = {
+  start: SELECTED_CATEGORY + START,
+  success: SELECTED_CATEGORY + SUCCESS,
+  failure: SELECTED_CATEGORY + FAILURE
 }
