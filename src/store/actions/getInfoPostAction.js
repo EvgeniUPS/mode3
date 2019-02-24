@@ -13,10 +13,10 @@ export const getInfoPost = (id, history) => async dispatch => {
     const dataApi = await apiCall.json()
 
     console.log(id)
-    console.log(dataApi)
+    console.log(444, dataApi)
 
-    dispatch(getInfoPostSuccess(dataApi.post))
-    history.push('/info')
+    dispatch(getInfoPostSuccess(dataApi))
+    history.push('http://176.114.4.107:8080/info')
   } catch (err) {
     dispatch(getInfoPostFailure('500 internal server error'))
   }

@@ -24,7 +24,7 @@ class Home extends PureComponent {
           <MainPost
             img={mainPost.post.img_list}
             title={mainPost.post.title}
-            content={mainPost.post.post}
+            post={mainPost.post.post}
           />
         )}
         <div className="Posts">
