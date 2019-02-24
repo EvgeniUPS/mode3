@@ -13,7 +13,7 @@ export const getCategory = () => async dispatch => {
     const dataApi = await apiCall.json()
 
 
-    dispatch(getCategorySuccess(dataApi.category))
+    dispatch(getCategorySuccess(dataApi))
   } catch (err) {
     dispatch(getCategoryFailure('500 internal server error'))
   }

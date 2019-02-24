@@ -15,7 +15,7 @@ class InfoPost extends Component {
           <div className="single-post">
             <div>
               <img
-              src={`/origin/${infoPost.post.img_list}`}
+                src={`img/origin/${infoPost.post.img_list[0]}`}
                 alt="logo img"
                 className="post-image"
               />
