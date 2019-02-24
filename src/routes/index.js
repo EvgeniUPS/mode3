@@ -4,18 +4,20 @@ import Home from '../pages/Home'
 import Login from '../pages/Login'
 import About from '../pages/About'
 import InfoPost from '../pages/InfoPost'
-import Header  from '../components/organisms/Header'
+import AdminPanel from '../pages/AdminPanel'
+import Header from '../components/organisms/Header'
 import { Footer } from '../components/organisms/Footer'
 
 export default () => (
   <>
-  <Header/>
-  <Switch>
-    <Route exact path="/" component={Home} />
-    <Route exact path="/about" component={About} />
-    <Route exact path="/login" component={Login} />
-    <Route exact path="/info" component={InfoPost} />
-  </Switch>
-  <Footer />
+    <Header />
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/login" component={Login} />
+      <Route exact path="/info" component={InfoPost} />
+      <Route exact path="/AdminPanel" component={AdminPanel} />
+    </Switch>
+    <Footer />
   </>
 )
