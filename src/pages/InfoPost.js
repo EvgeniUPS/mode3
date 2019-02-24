@@ -31,15 +31,19 @@ class InfoPost extends Component {
                   console.log(item)
                   return (
                     <div className="comment-block" key={item.id}>
-                      <div className="comment-header">
-                        <img
-                          src={item.avatar}
-                          alt="logo img"
-                          className="avatar"
-                        />
-                        <div className="user-name">{item.userName}</div>
+                      <div className="br">
+                        {' '}
+                        <div className="comment-header">
+                          <img
+                            src={item.avatar}
+                            alt="logo img"
+                            className="avatar"
+                          />
+                          <div className="user-name">{item.userName}</div>
+                        </div>
+                        <div className="comment-text">{item.msg}</div>
                       </div>
-                      <div className="comment-text">{item.msg}</div>
+
                       {item.answer &&
                         item.answer.map(answer => {
                           console.log(answer)
