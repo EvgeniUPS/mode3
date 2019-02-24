@@ -30,6 +30,7 @@
 .post-text{
     font-family: Arial, Georgia, serif;
     font-size: 24px;
+    padding: 10px;
 }
 .post-comments-title{
     color: #343460;
@@ -38,16 +39,24 @@
     font-weight: bold;
 }
 .comment-block{
-    border-left: 1px solid #888;
-    border-bottom: 1px solid #888;
+   
     display: flex;
+    padding: 10px;
     margin: 10px;
     flex-direction: column;
-    padding: 10px;
+}
+.br{
+     border: 1px solid #888;
+     padding: 10px;
 }
 
 .answer-block{
-    padding-left: 50px;
+    padding: 10px;
+    margin-left: 20px;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    border-left: 1px solid #888;
+    
 }
 .avatar{
     border: 1px solid #8b572a;
