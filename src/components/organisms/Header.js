@@ -16,7 +16,6 @@ class Header extends PureComponent {
   }
 
   categoryClick = () => {
-    console.log(33)
     this.props.getCategory()
     this.setState({isOpen: true})
   }
