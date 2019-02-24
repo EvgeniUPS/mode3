@@ -1,30 +1,22 @@
-import { GetInfoPost } from '../types'
+import { GetComment } from '../types'
 
 const initialState = {
   isFetch: false,
   error: '',
-  post: null,
+  comments: null,
 }
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case GetInfoPost.start:
+    case GetComment.start:
       return { ...state, isFetch: true }
-    case GetInfoPost.success:
-      console.log('payload',payload)
+    case GetComment.success:
       return {
         ...state,
         isFetch: false,
-        post: payload,
+        comments: payload,
         error: '',
       }
-      case GetInfoPost.comment:
-        console.log('payload',payload)
-        return {
-          ...state,
-          comments: payload,
-          error: '',
-        }
-    case GetInfoPost.failure:
+    case GetComment.failure:
       return { ...state, isAuth: false, isFetch: false, error: payload }
     default:
       return state

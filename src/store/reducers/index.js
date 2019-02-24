@@ -4,6 +4,7 @@ import mainPost from './setMainPostReducer'
 import infoPost from './setInfoPostReducer'
 import category from './setCategoryReducer'
 import selectedCategory from './SelectedCategoryReducer'
+import comments from './SetCommentReducer'
 
 
 export default combineReducers({
@@ -11,5 +12,6 @@ export default combineReducers({
   mainPost,
   infoPost,
   category,
-  selectedCategory
+  selectedCategory,
+  comments
 })

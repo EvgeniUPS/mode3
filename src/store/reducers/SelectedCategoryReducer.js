@@ -3,7 +3,7 @@ import { GetSelectedCategory } from '../types'
 const initialState = {
   isFetch: false,
   error: '',
-  posts: null,
+  category: null,
 }
 export default (state = initialState, { type, payload }) => {
   switch (type) {
@@ -13,7 +13,7 @@ export default (state = initialState, { type, payload }) => {
       return {
         ...state,
         isFetch: false,
-        posts: payload,
+        category: payload,
         error: '',
       }
     case GetSelectedCategory.failure:

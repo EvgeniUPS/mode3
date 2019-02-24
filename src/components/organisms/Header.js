@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import HeaderBlock from '../atom/Header'
 import { getCategory } from '../../store/actions/getCategoryAction'
+import { getSelectedCategory } from '../../store/actions/getSelectedCategoryAction'
 import '../../styles/Header.css'
 
 
@@ -36,6 +37,7 @@ class Header extends PureComponent {
               {
                 isOpen && category && <ul className='Category' onMouseLeave={this.mouseLeave}>
                   {category.map(item => {
+                    console.log(item);
                     return <li key={item.category_id}>{item.category_name}</li>
                   })}
                 </ul>
@@ -53,4 +55,4 @@ class Header extends PureComponent {
 const mapState = ({ category }) => (
   category
 )
-export default connect(mapState, { getCategory })(Header)
+export default connect(mapState, { getCategory, getSelectedCategory })(Header)

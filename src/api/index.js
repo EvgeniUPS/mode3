@@ -11,6 +11,9 @@ export default {
   getCategory() {
     return fetch("http://176.114.4.107:8080/category/all")
   },
+  getComments(id, page = 0) {
+    return fetch(`http://176.114.4.107:8080/comment/get/${id}/${page}`)
+  },
   signIn(data) {
     return fetch('http://176.114.4.107:8080/login', {
       method: 'POST',

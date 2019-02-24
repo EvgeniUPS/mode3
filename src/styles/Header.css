@@ -27,6 +27,7 @@
   width: max-content;
 }
 .header-main-nav li{
+  cursor: pointer;
   color: #8b572a;
   font-size: 22px;
 }

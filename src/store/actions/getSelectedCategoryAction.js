@@ -14,7 +14,6 @@ export const getSelectedCategory = (name) => async dispatch => {
     console.log(dataApi)
     console.log(name)
 
-
     dispatch(getSelectedCategorySuccess(dataApi))
   } catch (err) {
     dispatch(getSelectedCategoryFailure('500 internal server error'))
