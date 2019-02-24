@@ -1,5 +1,7 @@
 export default {
   getPosts() {
+    // id
+    // /post/${id}
     return fetch('posts.json')
   },
   getMainPost() {
