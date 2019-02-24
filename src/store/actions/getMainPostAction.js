@@ -12,7 +12,9 @@ export const getMainPost = () => async dispatch => {
     const apiCall = await API.getMainPost()
     const dataApi = await apiCall.json()
 
-    dispatch(getPostSuccess(dataApi.post))
+    console.log(999,dataApi);
+
+    dispatch(getPostSuccess(dataApi))
   } catch (err) {
     dispatch(getPostFailure('500 internal server error'))
   }

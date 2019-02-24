@@ -1,24 +1,23 @@
 export default {
-  getPosts() {
-    // id
-    // /post/${id}
-    return fetch('posts.json')
+  getPosts(page) {
+    return fetch(`http://176.114.4.107:8080/post/non-category/${page}`)
   },
   getMainPost() {
-    return fetch('mainPost.json')
+    return fetch("http://176.114.4.107:8080/post/main")
   },
-  // id
-  // /post/${id}
-  getInfoPost() {
-    return fetch('infoPost.json')
+  getInfoPost(id) {
+    return fetch(`/post/${id}`)
   },
   getCategory() {
-    return fetch('category.json')
+    return fetch("http://176.114.4.107:8080/category/all")
   },
   signIn(data) {
-    return fetch('signIn', {
+    return fetch('http://176.114.4.107:8080/login', {
       method: 'POST',
       body: data
     })
   },
+  selectCategory(name){
+    return fetch(`http://176.114.4.107:8080/post/${name}`);
+  }
 }
