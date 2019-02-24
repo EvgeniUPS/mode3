@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Post from './Post'   
+import Post from './Post'
 
 class Posts extends Component {
   render() {
@@ -7,13 +7,13 @@ class Posts extends Component {
 
     return (
       posts &&
-      posts.map((item, i) => {
-        console.log(item, i)
+      posts.map(item => {
         return (
           <Post
             id={item.id}
             key={item.id}
-            img={item.img}
+            snippet={item.snippet}
+            img={item.img_list[0]}
             title={item.title}
             content={item.post}
           />

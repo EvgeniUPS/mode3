@@ -22,7 +22,7 @@ class Home extends PureComponent {
       <>
         {mainPost.post && (
           <MainPost
-            img={mainPost.post.img}
+            img={mainPost.post.img_list[0]}
             title={mainPost.post.title}
             content={mainPost.post.post}
           />

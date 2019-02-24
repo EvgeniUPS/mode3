@@ -7,9 +7,4 @@ const Li = styled.li`
   margin-top: ${props => props.marginTop};
 `
 
-export const LiActive = styled(Li)`
-  color: black;
-  list-style-type: none;
-  text-decoration: underline;
-`
 export default Li

@@ -1,5 +1,7 @@
 export default {
   getPosts() {
+    // id
+    // /post/${id}
     return fetch('posts.json')
   },
   getMainPost() {
@@ -12,5 +14,11 @@ export default {
   },
   getCategory() {
     return fetch('category.json')
+  },
+  signIn(data) {
+    return fetch('signIn', {
+      method: 'POST',
+      body: data
+    })
   },
 }

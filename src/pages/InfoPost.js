@@ -6,9 +6,6 @@ import '../styles/Selected.css'
 class InfoPost extends Component {
   render() {
     const { infoPost } = this.props
-    // const { post } = infoPost
-    // const { commit } = post
-    // console.log('commit :', post)
     infoPost.post && console.log(infoPost.post.commit)
 
     return (
