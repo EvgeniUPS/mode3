@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import '../styles/Selected.css'
 
@@ -14,7 +13,7 @@ class InfoPost extends Component {
           <div className="single-post">
             <div>
               <img
-                src={infoPost.post.img}
+                src={`/origin/${infoPost.post.img_list[0]}`}
                 alt="logo img"
                 className="post-image"
               />
