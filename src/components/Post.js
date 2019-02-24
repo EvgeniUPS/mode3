@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { getInfoPost } from '../store/actions/getInfoPostAction'
-// import '../styles/Post.css'/
+
 
 class Post extends Component {
   goInfo = (id, history) => this.props.getInfoPost(id, history)
